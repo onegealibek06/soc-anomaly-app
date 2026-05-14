@@ -87,7 +87,7 @@ export default function Dashboard() {
     }
   };
 
-  const criticalCount = events.filter(e => e.severity === 'critical' || e.severity === 'high').length;
+  const criticalCount = useMemo(() => events.filter(e => e.severity === 'critical' || e.severity === 'high').length, [events]);
 
   return (
     <main className="min-h-screen bg-[#020617] text-slate-200 font-sans p-4 md:p-8 relative overflow-x-hidden">
@@ -227,7 +227,7 @@ export default function Dashboard() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-800/30">
-                {events.map((event) => (
+                {events.slice(0, 100).map((event) => (
                   <tr
                     key={event.id}
                     onClick={() => openReport(event)}
