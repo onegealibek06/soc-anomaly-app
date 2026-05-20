@@ -1,11 +1,15 @@
 import type { NextConfig } from "next";
 
+// При деплое укажи BACKEND_URL в переменных окружения сервера
+// Например: BACKEND_URL=https://your-api.railway.app
+const BACKEND_URL = process.env.BACKEND_URL || "http://127.0.0.1:8000";
+
 const nextConfig: NextConfig = {
   async rewrites() {
     return [
       {
         source: "/api/:path*",
-        destination: "http://127.0.0.1:8000/:path*",
+        destination: `${BACKEND_URL}/:path*`,
       },
     ];
   },

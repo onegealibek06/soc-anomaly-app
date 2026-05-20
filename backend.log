@@ -13083,3 +13083,1592 @@ INFO:watchfiles.main:6 changes detected
 INFO:watchfiles.main:6 changes detected
 INFO:watchfiles.main:1 change detected
 INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:15 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:5 changes detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:29 changes detected
+INFO:watchfiles.main:5 changes detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:7 changes detected
+INFO:watchfiles.main:4 changes detected
+INFO:watchfiles.main:4 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:4 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:222 changes detected
+INFO:watchfiles.main:6 changes detected
+INFO:watchfiles.main:5 changes detected
+INFO:watchfiles.main:15 changes detected
+INFO:watchfiles.main:13 changes detected
+INFO:watchfiles.main:172 changes detected
+INFO:watchfiles.main:132 changes detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:8 changes detected
+INFO:watchfiles.main:5 changes detected
+INFO:watchfiles.main:4 changes detected
+INFO:watchfiles.main:48 changes detected
+INFO:watchfiles.main:38 changes detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:23 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:26 changes detected
+INFO:watchfiles.main:25 changes detected
+INFO:watchfiles.main:27 changes detected
+INFO:watchfiles.main:64 changes detected
+INFO:watchfiles.main:58 changes detected
+INFO:watchfiles.main:22 changes detected
+INFO:watchfiles.main:16 changes detected
+INFO:watchfiles.main:13 changes detected
+INFO:watchfiles.main:2 changes detected
+INFO:watchfiles.main:17 changes detected
+INFO:watchfiles.main:13 changes detected
+INFO:watchfiles.main:71 changes detected
+INFO:watchfiles.main:20 changes detected
+INFO:watchfiles.main:9 changes detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'mitre_mapper.py'. Reloading...
+Process SpawnProcess-156:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 3, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/anomaly_detector.py'. Reloading...
+Process SpawnProcess-157:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 3, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/main.py'. Reloading...
+INFO:watchfiles.main:3 changes detected
+Process SpawnProcess-158:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'generate_data.py'. Reloading...
+Process SpawnProcess-159:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/main.py'. Reloading...
+INFO:watchfiles.main:3 changes detected
+Process SpawnProcess-160:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'mitre_mapper.py'. Reloading...
+Process SpawnProcess-161:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'mitre_mapper.py'. Reloading...
+Process SpawnProcess-162:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/anomaly_detector.py'. Reloading...
+Process SpawnProcess-163:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/anomaly_detector.py'. Reloading...
+Process SpawnProcess-164:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/main.py'. Reloading...
+INFO:watchfiles.main:3 changes detected
+Process SpawnProcess-165:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:2 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_arff_parser.py'. Reloading...
+INFO:watchfiles.main:6 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_gen_harmonic.py'. Reloading...
+Process SpawnProcess-166:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:67 changes detected
+Process SpawnProcess-167:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio5_params.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_build_utils/version.py', 'venv.bak/lib/python3.12/site-packages/sklearn/compose/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/filepost.py', 'venv.bak/lib/python3.12/site-packages/~cipy/constants/constants.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/index.py', 'venv.bak/lib/python3.12/site-packages/sklearn/kernel_approximation.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/truststore/_openssl.py', 'venv.bak/lib/python3.12/site-packages/sklearn/impute/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/_internal_utils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/constants/tests/test_codata.py', 'venv.bak/lib/python3.12/site-packages/dateutil/parser/__init__.py', 'venv.bak/lib/python3.12/site-packages/dateutil/_common.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/network/__init__.py'. Reloading...
+Process SpawnProcess-168:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:148 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/neural_network/tests/test_base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/constants/codata.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_fast_dict.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/wsgi.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/quadpack.py', 'venv.bak/lib/python3.12/site-packages/~cipy/datasets/_download_all.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/_byteordercodes.py', 'venv.bak/lib/python3.12/site-packages/dateutil/__init__.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~lugin/_loader.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/cors.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_covtype.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/_ivp/tests/test_rk.py', 'venv.bak/lib/python3.12/site-packages/fastapi/requests.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/format_control.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/coo.py', 'venv.bak/lib/python3.12/site-packages/sklearn/gaussian_process/tests/_mini_sequence_kernel.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/distributions/wheel.py', 'venv.bak/lib/python3.12/site-packages/sklearn/inspection/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/neural_network/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/token.py', 'venv.bak/lib/python3.12/site-packages/sklearn/linear_model/_glm/tests/__init__.py'. Reloading...
+Process SpawnProcess-169:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:161 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/signal/spectral.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_shortest_path.py', 'venv.bak/lib/python3.12/site-packages/sklearn/svm/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/model_selection/tests/common.py', 'venv.bak/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/descr/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/tests/test_extending.py', 'venv.bak/lib/python3.12/site-packages/sklearn/kernel_ridge.py', 'venv.bak/lib/python3.12/site-packages/dateutil/_version.py', 'venv.bak/lib/python3.12/site-packages/dateutil/tz/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_dataframe.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_trig.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/torch/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/sparsetools.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/byteordercodes.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_unique.py', 'venv.bak/lib/python3.12/site-packages/sklearn/inspection/_pd_utils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_input_validation.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/__version__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/basic.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/style.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/gzip.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_sf_error.py', 'venv.bak/lib/python3.12/site-packages/dateutil/tzwin.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/installation_report.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/lil.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/httpsredirect.py', 'venv.bak/lib/python3.12/site-packages/sklearn/inspection/tests/test_pd_utils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio5.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/metadata_editable.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/truststore/_ssl_constants.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/index/__init__.py'. Reloading...
+INFO:watchfiles.main:43 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/datasets/_registry.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_missing.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_user_interface.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_chunking.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/metadata/_json.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/tests/test_reachibility.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/tests/test_mio_utils.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_in_process/__init__.py'. Reloading...
+Process SpawnProcess-170:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+Process SpawnProcess-171:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:260 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio5_utils.py', 'venv.bak/lib/python3.12/site-packages/dateutil/utils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/cluster/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/metadata/importlib/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/_compat.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~internal/_internal_dataclass.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/distributions/installed.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/tests/test_california_housing.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_deprecation.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/pager.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/locations/base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test_scipy_version.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_build_utils/tempita.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/metadata_legacy.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/candidate.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/base.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_mask.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/scheme.py', 'venv.bak/lib/python3.12/site-packages/~cipy/datasets/_utils.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/_version.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/construct.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/themes.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~1/parse.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/asyncexitstack.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/trustedhost.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/orthogonal.py', 'venv.bak/lib/python3.12/site-packages/sklearn/feature_extraction/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/tests/test_olivetti_faces.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/dop.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/tests/test_mio_funcs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/tests/test_miobase.py', 'venv.bak/lib/python3.12/site-packages/anyio/_core 2/_streams.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/tomli/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/add_newdocs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/cupy/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/naive_bayes.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/sputils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/data.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pyproject_hooks/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/tests/test_cython_lapack.py'. Reloading...
+INFO:watchfiles.main:84 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/dateutil/easter.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~internal/_import_utils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/linear_model/tests/test_perceptron.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csgraph/tests/test_conversions.py', 'venv.bak/lib/python3.12/site-packages/anyio/_core 2/_signals.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/specfun.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~internal/_forward_ref.py', 'venv.bak/lib/python3.12/site-packages/dateutil/tz/_factories.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_dd.py', 'venv.bak/lib/python3.12/site-packages/anyio/_core 2/_typedattr.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csgraph/tests/test_spanning_tree.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/truststore/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/torch/_typing.py'. Reloading...
+Process SpawnProcess-172:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:214 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/calibration.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/tests/common.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/network/xmlrpc.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_arrayfuncs.py', 'venv.bak/lib/python3.12/site-packages/anyio/_core 2/_resources.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test_deprecation.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_show_versions.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test_config.py', 'venv.bak/lib/python3.12/site-packages/fastapi/logger.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/distributions/base.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/tomli/_re.py', 'venv.bak/lib/python3.12/site-packages/~cipy/spatial/transform/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio_utils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_bunch.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~eprecated/parse.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/torch/fft.py', 'venv.bak/lib/python3.12/site-packages/~cipy/datasets/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/_rbfinterp_np.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/tests/test_cython_optimize.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/distributions/__init__.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~internal/_serializers.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/cli/progress_bars.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/metadata/importlib/_compat.py', 'venv.bak/lib/python3.12/site-packages/sklearn/model_selection/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/mio4.py', 'venv.bak/lib/python3.12/site-packages/~cipy/spatial/transform/rotation.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csgraph/tests/test_reordering.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/frozen/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/models/selection_prefs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/tests/test_byteordercodes.py', 'venv.bak/lib/python3.12/site-packages/sklearn/covariance/tests/test_elliptic_envelope.py', 'venv.bak/lib/python3.12/site-packages/fastapi/middleware 2/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/certs.py'. Reloading...
+Process SpawnProcess-173:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:89 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/_tmpdirs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tree/tests/test_reingold_tilford.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp_qr.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/spfun_stats.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/compat.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/utils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_export_format.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trustregion_constr/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/cupy/linalg.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/resolvelib/reporters.py', 'venv.bak/lib/python3.12/site-packages/pydantic/json.py', 'venv.bak/lib/python3.12/site-packages/joblib/testing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/odr/odrpack.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/caches/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/resolvelib/compat/collections_abc.py', 'venv.bak/lib/python3.12/site-packages/flask_bcrypt.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/idna/intranges.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_precompute_utils.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/interpolation.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/_lib/_utils/_typing.py'. Reloading...
+Process SpawnProcess-174:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:102 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/elementwise.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_show_versions.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/packaging/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trustregion_krylov.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/minpack2.py', 'venv.bak/lib/python3.12/site-packages/pydantic/datetime_parse 2.py', 'venv.bak/lib/python3.12/site-packages/sklearn/base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/_rules/_gauss_legendre.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/windows/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/urls.py'. Reloading...
+Process SpawnProcess-175:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+Process SpawnProcess-176:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:229 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/misc.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/backend/fork_exec.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/_harwell_boeing/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_emoji_replace.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/loggamma.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/distributions.py', 'app/schemas.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/idna/compat.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/windows/windows.py', 'venv.bak/lib/python3.12/site-packages/pydantic/env_settings.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/conftest.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/sampling.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_cobyqa_py.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/mstats_basic.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/tests/test_enable_successive_halving.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp_schur.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/_internal.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_windows.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/lambertw.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_init.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_extension.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/ratio.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_dsolve/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/cupy/fft.py', 'venv.bak/lib/python3.12/site-packages/PyQt5/pyrcc_main.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/_constants.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/_lib/_backends.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/tests/test_helper.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/subsolvers/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/isolve.py'. Reloading...
+INFO:watchfiles.main:90 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/matfuncs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp_svd.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/infos.py', 'venv.bak/lib/python3.12/site-packages/sklearn/decomposition/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/gammainc_asy.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/tests/test_import.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/cloudpickle/cloudpickle_fast.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/interface.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/_lib/_utils/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/_sparse.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_kddcup99.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~1/tools.py', 'venv.bak/lib/python3.12/site-packages/~cipy/version.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/_base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trustregion_constr/report.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_fileno.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/dsolve.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/backend/process.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/expn_asy.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/_packaging/_structures.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/_lib/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/consts.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/present.py', 'venv.bak/lib/python3.12/site-packages/sklearn/exceptions.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tree/tests/test_fenwick.py', 'venv.bak/lib/python3.12/site-packages/~cipy/odr/models.py', 'venv.bak/lib/python3.12/site-packages/sklearn/metrics/cluster/tests/test_bicluster.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/packages.py'. Reloading...
+Process SpawnProcess-177:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:135 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_vendor/distro/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/cupy/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/mvn.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/_rules/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/linear_model/_glm/__init__.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~1/version.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/idna/package_data.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/cache.py', 'venv.bak/lib/python3.12/site-packages/sklearn/metrics/cluster/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_eigen/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/linesearch.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_samples_generator.py', 'venv.bak/lib/python3.12/site-packages/pydantic/decorator 2.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/numpy/_typing.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/dask/array/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/data/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py'. Reloading...
+Process SpawnProcess-178:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:106 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/basic.py', 'venv.bak/lib/python3.12/site-packages/sklearn/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/special_matrices.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/_feature_agglomeration.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/_linear_constraints.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cross_decomposition/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/_cmd.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/vcs/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/wrightomega.py', 'venv.bak/lib/python3.12/site-packages/sklearn/dummy.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/backend/__init__.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/backend/_win_reduction.py', 'venv.bak/lib/python3.12/site-packages/~cipy/odr/_add_newdocs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/_public_api.py', 'venv.bak/lib/python3.12/site-packages/sklearn/pipeline.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/_nonlinear_constraints.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/metadata_routing.py', 'venv.bak/lib/python3.12/site-packages/sklearn/linear_model/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/cosine_cdf.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/resolvelib/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp_lu.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/helper.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/utils/__init__.py'. Reloading...
+INFO:watchfiles.main:53 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/stats/kde.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/biasedurn.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/mstats.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/zeros.py'. Reloading...
+INFO:watchfiles.main:78 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/joblib/externals/cloudpickle/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/hooks.py', 'venv.bak/lib/python3.12/site-packages/sklearn/metrics/_plot/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/__init__.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/backend/_posix_reduction.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/_lib/_utils/_compat.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/_testutils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_unique.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/dask/array/linalg.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/__init__.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/initializers.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fft/_realtransforms_backend.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/__init__.py', 'venv.bak/lib/python3.12/site-packages/PyQt5/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/cupy/_typing.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/certifi/__init__.py'. Reloading...
+INFO:watchfiles.main:100 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/ensemble/_hist_gradient_boosting/tests/test_bitset.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/_precompute/zetac.py', 'venv.bak/lib/python3.12/site-packages/pydantic/error_wrappers 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/arff/arffread.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_eigen/arpack/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/_harwell_boeing/tests/test_fortran_format.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/retry.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/testutils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/torch/fft.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_null_file.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/filter.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/structures.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/enable_hist_gradient_boosting.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/history.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_missing_multiprocessing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_spence.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/redrho.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/utils/math.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/errors.py'. Reloading...
+Process SpawnProcess-182:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:113 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/anyio/abc 2/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/enable_halving_search_cv.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tree/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/_result_classes.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/packaging/requirements.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/datetime.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/emoji.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fft/tests/mock_backend.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/distro/__main__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/packaging.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_loop.py', 'venv.bak/lib/python3.12/site-packages/pip/__pip-runner__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/entrypoints.py', 'venv.bak/lib/python3.12/site-packages/fastapi/security 2/base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_isolve/tests/test_minres.py', 'venv.bak/lib/python3.12/site-packages/PyQt5/pylupdate_main.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_extra/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/tests/test_result_type.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_min_dependencies.py', 'venv.bak/lib/python3.12/site-packages/sklearn/multioutput.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fft/tests/test_multithreading.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_base.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/numpy/__init__.py'. Reloading...
+INFO:watchfiles.main:34 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/utils/versions.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/common.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/tests/test_splines.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_cloudpickle_wrapper.py', 'venv.bak/lib/python3.12/site-packages/joblib/externals/loky/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_digamma.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_utils.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_module.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_openml.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/pyprima/common/_bounds.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/basic.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/__init__.py'. Reloading...
+INFO:watchfiles.main:65 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/io/arff/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/realtransforms.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/tnc.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/compat.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/_ndimage_api.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/uarray.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/__init__.py', 'venv.bak/lib/python3.12/site-packages/anyio/to_thread.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trustregion_constr/tests/test_report.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/msgpack/exceptions.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/tests/test_ni_support.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/common/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_optional_dependencies.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/__init__.py', 'venv.bak/lib/python3.12/site-packages/pydantic/tools 2.py', 'venv.bak/lib/python3.12/site-packages/fastapi/concurrency.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_store_backends.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/filetypes.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/constrain.py'. Reloading...
+Process SpawnProcess-185:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:170 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/_lib/_utils/_compat.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/msgpack/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/isotonic.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_testing.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/certifi/__main__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/morestats.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/cli/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fftpack/pseudo_diffs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_nan_inputs.py', 'venv.bak/lib/python3.12/site-packages/pydantic/class_validators.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/morphology.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/dask/array/fft.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fft/_debug_backends.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/optimize.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/platformdirs/__main__.py', 'venv.bak/lib/python3.12/site-packages/pip/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/tests/test_datatypes.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_cosine_distr.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/diagnose.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/stats.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_pick.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_distributor_init.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trustregion_constr/tests/test_nested_minimize.py', 'venv.bak/lib/python3.12/site-packages/pip/__main__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/numpy/fft.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/tests/test_feature_agglomeration.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/slsqp.py', 'venv.bak/lib/python3.12/site-packages/fastapi/security 2/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tests/test_kernel_ridge.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/tests/__init__.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_disk.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/tests/test_extract.py', 'venv.bak/lib/python3.12/site-packages/joblib/_cloudpickle_wrapper.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_backports.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/decomp_cholesky.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_user_interface.py'. Reloading...
+INFO:watchfiles.main:31 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/color_triplet.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_timer.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/filters.py', 'venv.bak/lib/python3.12/site-packages/~cipy/linalg/matfuncs.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_numpy_pickle_compat.py'. Reloading...
+INFO:watchfiles.main:11 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/externals/_scipy/sparse/csgraph/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_windows_renderer.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/filesize.py'. Reloading...
+INFO:watchfiles.main:23 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/encoding.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/_harwell_boeing/tests/test_hb.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/packaging/_musllinux.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/lbfgsb.py'. Reloading...
+INFO:watchfiles.main:26 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/utils/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/_common.py', 'venv.bak/lib/python3.12/site-packages/anyio/abc 2/_resources.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/enable_iterative_imputer.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_species_distributions.py'. Reloading...
+INFO:watchfiles.main:55 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/_lib/_utils/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/tests/test_gil.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/moduleTNC.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/_warnings_errors.py', 'venv.bak/lib/python3.12/site-packages/sklearn/manifold/tests/test_classical_mds.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/cobyla.py', 'venv.bak/lib/python3.12/site-packages/fastapi/openapi 2/constants.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/distlib/__init__.py'. Reloading...
+INFO:watchfiles.main:52 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_lsq/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_isolve/tests/test_utils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tests/test_init.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/file_proxy.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/torch/_typing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/minpack.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/egg_link.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tests/test_build.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/console.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/_array_api_compat_vendor.py'. Reloading...
+INFO:watchfiles.main:84 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/neighbors/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/fourier.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/dask/array/linalg.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/dask/array/fft.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/cobyqa/utils/exceptions.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/eigen.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_numpy_pickle_utils.py', 'venv.bak/lib/python3.12/site-packages/fastapi/templating.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_powm1.py', 'venv.bak/lib/python3.12/site-packages/sklearn/tests/test_check_build.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/_array_api_compat_vendor.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/_stack.py'. Reloading...
+Process SpawnProcess-193:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:291 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/ensemble/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/platformdirs/version.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/tests/test_wavelets.py', 'venv.bak/lib/python3.12/site-packages/anyio/abc 2/_subprocesses.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_dataframe.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/screen.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/dask/array/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/adapter.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/cachecontrol/wrapper.py', 'venv.bak/lib/python3.12/site-packages/anyio/abc 2/_testing.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_logger.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/idna/__init__.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~eprecated/config.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/_gcutils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/manifold/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/_pade.py', 'venv.bak/lib/python3.12/site-packages/sklearn/__check_build/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_bunch.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/req/req_set.py', 'venv.bak/lib/python3.12/site-packages/~cipy/fft/_pocketfft/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/nonlin.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_gamma.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/mstats_extras.py', 'venv.bak/lib/python3.12/site-packages/joblib/_multiprocessing_helpers.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/_log.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/tests/test_enable_hist_gradient_boosting.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/tests/test_extending.py', 'venv.bak/lib/python3.12/site-packages/pydantic/experimental/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/packaging/_structures.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/_rcont/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_rcv1.py', 'venv.bak/lib/python3.12/site-packages/joblib/test/test_func_inspect_special_encoding.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/__main__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/main.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/_lib/_utils/_typing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/numpy/_typing.py', 'venv.bak/lib/python3.12/site-packages/sklearn/experimental/tests/test_enable_iterative_imputer.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/_internal.py', 'venv.bak/lib/python3.12/site-packages/sklearn/feature_selection/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_loggamma.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/abc.py', 'venv.bak/lib/python3.12/site-packages/fastapi/security 2/utils.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/numpy/fft.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/utils/appdirs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/ndimage/measurements.py', 'venv.bak/lib/python3.12/site-packages/sklearn/externals/array_api_compat/torch/__init__.py', 'venv.bak/lib/python3.12/site-packages/fastapi/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_nnls.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_pcf.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/util/queue.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/numpy/__init__.py'. Reloading...
+INFO:watchfiles.main:42 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_internal/cli/status_codes.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/polyint.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/filter_design.py', 'venv.bak/lib/python3.12/site-packages/sklearn/conftest.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/fir_filter_design.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_distributor_init.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csc.py'. Reloading...
+INFO:watchfiles.main:24 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/compressed.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test_import_cycles.py', 'venv.bak/lib/python3.12/site-packages/sklearn/multiclass.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/cli/main.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/_rbfinterp_common.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/signaltools.py'. Reloading...
+INFO:watchfiles.main:23 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/dfitpack.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/_ivp/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/covariance/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/styles/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/gaussian_process/__init__.py'. Reloading...
+INFO:watchfiles.main:39 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_internal/resolution/base.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/tests/test_lbfgsb_hessinv.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/install/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_available_if.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/util/proxy.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/packages/backports/makefile.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/contrib/_appengine_environ.py', 'venv.bak/lib/python3.12/site-packages/dateutil/zoneinfo/rebuild.py'. Reloading...
+INFO:watchfiles.main:31 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/preprocessing/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/misc/doccer.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/cupy/_typing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/netcdf.py'. Reloading...
+INFO:watchfiles.main:20 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/special/sf_error.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_ndtr.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_spfun_stats.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_pdtr.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_round.py'. Reloading...
+INFO:watchfiles.main:47 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/scope.py', 'app/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/misc/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csgraph/_validation.py', 'venv.bak/lib/python3.12/site-packages/anyio/_core 2/_testing.py', 'venv.bak/lib/python3.12/site-packages/pydantic/~internal/_git.py'. Reloading...
+INFO:watchfiles.main:43 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_weight_vector.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/tests/test_rcv1.py', 'venv.bak/lib/python3.12/site-packages/pydantic/utils 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/_spfuncs.py', 'venv.bak/lib/python3.12/site-packages/pydantic/schema 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/_trlib/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/odepack.py'. Reloading...
+INFO:watchfiles.main:25 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/interpolate.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_olivetti_faces.py', 'venv.bak/lib/python3.12/site-packages/sklearn/discriminant_analysis.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test__testutils.py', 'venv.bak/lib/python3.12/site-packages/fastapi/cli.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/spline.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/bsr.py'. Reloading...
+INFO:watchfiles.main:24 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/fastapi/responses.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test_tmpdirs.py', 'venv.bak/lib/python3.12/site-packages/fastapi/websockets.py'. Reloading...
+INFO:watchfiles.main:29 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/signal/_signal_api.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/fitpack.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/ndgriddata.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/__init__.py'. Reloading...
+INFO:watchfiles.main:27 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_metaestimators.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/tests/test_pathological.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/images/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/install/editable_legacy.py'. Reloading...
+INFO:watchfiles.main:15 changes detected
+WARNING:  WatchFiles detected changes in 'app/models.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/vode.py'. Reloading...
+INFO:watchfiles.main:66 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/fastapi/exception_handlers.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_faddeeva.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/tomli/_types.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_boost_ufuncs.py', 'venv.bak/lib/python3.12/site-packages/threadpoolctl.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_erfinv.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_cephes_intp_cast.py', 'venv.bak/lib/python3.12/site-packages/~cipy/spatial/ckdtree.py', 'venv.bak/lib/python3.12/site-packages/sklearn/mixture/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/idl.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/styled.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/cupy/fft.py'. Reloading...
+INFO:watchfiles.main:10 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/mixture/tests/test_mixture.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_owens_t.py', 'venv.bak/lib/python3.12/site-packages/~cipy/spatial/kdtree.py'. Reloading...
+INFO:watchfiles.main:80 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/six.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_missing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/streams.py', 'venv.bak/lib/python3.12/site-packages/~cipy/optimize/tests/test_regression.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/scanner.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_lfw.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/tests/test_covtype.py', 'venv.bak/lib/python3.12/site-packages/pydantic/alias_generators 2.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/protocol.py', 'venv.bak/lib/python3.12/site-packages/pydantic/parse.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/wheel_editable.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/rbf.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_typedefs.py'. Reloading...
+INFO:watchfiles.main:16 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/signal/_wavelets.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_config.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/fitpack2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/dok.py', 'venv.bak/lib/python3.12/site-packages/~cipy/stats/tests/test_new_distributions.py', 'venv.bak/lib/python3.12/site-packages/fastapi/types.py'. Reloading...
+INFO:watchfiles.main:46 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_california_housing.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/lti_conversion.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/_lib/_backends.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/commands/help.py', 'venv.bak/lib/python3.12/site-packages/pydantic/validators 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/ltisys.py', 'venv.bak/lib/python3.12/site-packages/fastapi/__main__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/wavelets.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/common/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/cli/command_context.py'. Reloading...
+INFO:watchfiles.main:20 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/regexopt.py', 'venv.bak/lib/python3.12/site-packages/sklearn/semi_supervised/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_arpack.py', 'venv.bak/lib/python3.12/site-packages/sklearn/_loss/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/wheel_legacy.py', 'venv.bak/lib/python3.12/site-packages/sklearn/feature_selection/tests/test_variance_threshold.py'. Reloading...
+INFO:watchfiles.main:59 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/sklearn/random_projection.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_eigen/lobpcg/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/mmio.py', 'venv.bak/lib/python3.12/site-packages/~cipy/io/matlab/miobase.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_svmlight_format_io.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/urllib3/util/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/integrate/lsoda.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/linalg/_isolve/__init__.py'. Reloading...
+INFO:watchfiles.main:41 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_ufunc_signatures.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_precompute_expn_asy.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_extending.py', 'venv.bak/lib/python3.12/site-packages/~cipy/differentiate/__init__.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_specfun.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_sph_harm.py'. Reloading...
+INFO:watchfiles.main:15 changes detected
+INFO:watchfiles.main:118 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/~cipy/io/harwell_boeing.py', 'venv.bak/lib/python3.12/site-packages/fastapi/staticfiles.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/commands/hash.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/extract.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/commands/check.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/requests/api.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/waveforms.py', 'venv.bak/lib/python3.12/site-packages/pydantic/generics 2.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/modeline.py', 'venv.bak/lib/python3.12/site-packages/fastapi/testclient.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_extra/_lib/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_murmurhash.py', 'venv.bak/lib/python3.12/site-packages/sklearn/cluster/_hdbscan/__init__.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/metadata.py', 'venv.bak/lib/python3.12/site-packages/~cipy/signal/bsplines.py', 'venv.bak/lib/python3.12/site-packages/~cipy/interpolate/interpnd.py', 'venv.bak/lib/python3.12/site-packages/pydantic/typing 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/tests/test__pep440.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/dia.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/operations/build/wheel.py'. Reloading...
+Process SpawnProcess-216:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:121 changes detected
+WARNING:  WatchFiles detected changes in 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/formatters/pangomarkup.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_repr_html/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_arpack.py', 'venv.bak/lib/python3.12/site-packages/sklearn/inspection/_plot/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/_test_common/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/_twenty_newsgroups.py', 'venv.bak/lib/python3.12/site-packages/pip/_internal/req/__init__.py', 'venv.bak/lib/python3.12/site-packages/sklearn/datasets/tests/test_kddcup99.py', 'venv.bak/lib/python3.12/site-packages/~cipy/_lib/array_api_compat/cupy/linalg.py', 'venv.bak/lib/python3.12/site-packages/pydantic/experimental/arguments_schema 2.py', 'venv.bak/lib/python3.12/site-packages/~cipy/spatial/qhull.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/pygments/plugin.py', 'venv.bak/lib/python3.12/site-packages/fastapi/background.py', 'venv.bak/lib/python3.12/site-packages/~cipy/misc/common.py', 'venv.bak/lib/python3.12/site-packages/sklearn/utils/tests/test_graph.py', 'venv.bak/lib/python3.12/site-packages/pip/_vendor/rich/region.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_sici.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/csr.py', 'venv.bak/lib/python3.12/site-packages/~cipy/sparse/spfuncs.py', 'venv.bak/lib/python3.12/site-packages/~cipy/special/tests/test_cdft_asymptotic.py'. Reloading...
+Process SpawnProcess-218:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/main.py'. Reloading...
+INFO:watchfiles.main:3 changes detected
+Process SpawnProcess-219:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+WARNING:  WatchFiles detected changes in 'app/schemas.py'. Reloading...
+INFO:watchfiles.main:3 changes detected
+Process SpawnProcess-220:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 75, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 194, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 79, in serve
+    await self._serve(sockets)
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/server.py", line 86, in _serve
+    config.load()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 481, in load
+    self.loaded_app = self.load_app()
+                      ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/config.py", line 415, in load_app
+    return import_from_string(self.app)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/Users/onege/Desktop/soc-anomaly-app/app/main.py", line 4, in <module>
+    from app.ai_engine import ai_analyst
+  File "/Users/onege/Desktop/soc-anomaly-app/app/ai_engine.py", line 2, in <module>
+    from google import genai
+ImportError: cannot import name 'genai' from 'google' (unknown location)
+INFO:watchfiles.main:3 changes detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
+INFO:watchfiles.main:1 change detected
