@@ -93,13 +93,13 @@ export default function Dashboard() {
   useEffect(() => {
     setIsMounted(true);
     fetchEvents();
-    const interval = setInterval(fetchEvents, 3000);
+    const interval = setInterval(fetchEvents, 10000);
     return () => clearInterval(interval);
   }, []);
 
   const fetchEvents = async () => {
     try {
-      const res = await fetch('/api/events', {
+      const res = await fetch('/api/events?limit=30', {
         headers: { 'X-API-Key': 'soc_diploma_secret_2026' }
       });
       const data = await res.json();
@@ -152,29 +152,10 @@ export default function Dashboard() {
       {/* Background Layer */}
       <div className="fixed inset-0 bg-[#020617] -z-20" />
       <div className="fixed inset-0 bg-grid opacity-20 -z-10" />
-      <div className="fixed inset-0 bg-scanlines -z-10 opacity-20" />
       
-      {/* Animated Glows */}
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.2, 1], 
-          opacity: [0.1, 0.3, 0.1],
-          x: [0, 50, 0],
-          y: [0, 30, 0]
-        }}
-        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut" }}
-        className="fixed top-[-20%] left-[-10%] w-[100%] h-[100%] bg-blue-600/10 blur-[180px] rounded-full -z-10" 
-      />
-      <motion.div 
-        animate={{ 
-          scale: [1, 1.1, 1], 
-          opacity: [0.1, 0.2, 0.1],
-          x: [0, -40, 0],
-          y: [0, -20, 0]
-        }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-        className="fixed bottom-[-20%] right-[-10%] w-[80%] h-[80%] bg-indigo-600/10 blur-[180px] rounded-full -z-10" 
-      />
+      {/* Static Glows — CSS-only, GPU-composited, no JS overhead */}
+      <div className="glow-orb-1" />
+      <div className="glow-orb-2" />
 
       <div className="max-w-[1600px] mx-auto p-4 md:p-8 lg:p-12 space-y-12 relative z-10">
         
@@ -291,7 +272,7 @@ export default function Dashboard() {
                     strokeWidth={4} 
                     fillOpacity={1} 
                     fill="url(#colorScore)" 
-                    animationDuration={2000}
+                    isAnimationActive={false}
                   />
                 </AreaChart>
               </ResponsiveContainer>
@@ -304,18 +285,14 @@ export default function Dashboard() {
             className="glass rounded-[2.5rem] p-8 flex flex-col justify-center items-center text-center relative overflow-hidden bg-gradient-to-br from-indigo-500/10 to-transparent"
           >
             <div className="relative mb-8">
-              <motion.div 
-                animate={{ rotate: 360 }}
-                transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="w-32 h-32 rounded-full border-2 border-dashed border-blue-500/30 p-2"
-              >
+              <div className="w-32 h-32 rounded-full border-2 border-dashed border-blue-500/30 p-2 spin-slow">
                 <div className="w-full h-full rounded-full border-2 border-blue-500/50 flex items-center justify-center">
                   <div className="w-16 h-16 rounded-full bg-blue-500/20 flex items-center justify-center">
                     <Zap className="text-blue-400" size={32} />
                   </div>
                 </div>
-              </motion.div>
-              <div className="absolute inset-0 bg-blue-500/20 blur-3xl rounded-full animate-pulse-slow -z-10" />
+              </div>
+              <div className="absolute inset-0 bg-blue-500/20 rounded-full animate-pulse-slow -z-10" />
             </div>
             
             <h4 className="text-xl font-black text-white italic uppercase tracking-tighter mb-4">Neural Engine Active</h4>
@@ -368,7 +345,7 @@ export default function Dashboard() {
 
           <div className="overflow-x-auto max-h-[600px] custom-scrollbar">
             <table className="w-full text-left border-collapse">
-              <thead className="sticky top-0 bg-[#020617]/80 backdrop-blur-md z-10 border-b border-white/5">
+              <thead className="sticky top-0 bg-[#020617] z-10 border-b border-white/5">
                 <tr className="text-slate-500 text-[10px] uppercase font-black tracking-[0.2em]">
                   <th className="px-8 py-5">Process Origin</th>
                   <th className="px-8 py-5">Command Context</th>
@@ -378,16 +355,11 @@ export default function Dashboard() {
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/[0.03]">
-                <AnimatePresence mode="popLayout">
                   {events.map((event) => (
-                    <motion.tr
+                    <tr
                       key={event.id}
-                      layout
-                      initial={{ opacity: 0, x: -20 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      exit={{ opacity: 0, scale: 0.9 }}
                       onClick={() => openReport(event)}
-                      className="group hover:bg-blue-500/[0.04] transition-all cursor-pointer border-l-4 border-l-transparent hover:border-l-blue-500"
+                      className="group hover:bg-blue-500/[0.04] transition-colors cursor-pointer border-l-4 border-l-transparent hover:border-l-blue-500"
                     >
                       <td className="px-8 py-6">
                         <div className="flex items-center gap-4">
@@ -420,9 +392,8 @@ export default function Dashboard() {
                       <td className="px-8 py-6 text-right font-mono text-xs text-slate-400 group-hover:text-blue-400 group-hover:font-bold">
                         {event.anomaly_score.toFixed(4)}
                       </td>
-                    </motion.tr>
+                    </tr>
                   ))}
-                </AnimatePresence>
               </tbody>
             </table>
           </div>
@@ -441,7 +412,7 @@ export default function Dashboard() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               onClick={() => setIsModalOpen(false)}
-              className="absolute inset-0 bg-black/80 backdrop-blur-md"
+              className="absolute inset-0 bg-black/85"
             />
             <motion.div
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
