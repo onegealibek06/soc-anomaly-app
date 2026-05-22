@@ -16,3 +16,11 @@ frontend/out/
 
 # OS
 .DS_Store
+
+# Backup venv & runtime files
+venv.bak/
+*.log
+*.db
+*.joblib
+model_metrics.json
+.claude/
