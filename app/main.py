@@ -365,10 +365,15 @@ def _calculate_severity(score: float, techniques: list) -> str:
 
 @app.get("/events", response_model=list[schemas.EventOut])
 def get_events(
-    limit: int = 100,
+    limit: int = 200,
     severity: str | None = None,
     search: str | None = None,
     acknowledged: str | None = None,
+    date_from: str | None = None,
+    date_to: str | None = None,
+    mitre: str | None = None,
+    min_score: float | None = None,
+    max_score: float | None = None,
     api_key: str = Depends(verify_api_key),
     db: Session = Depends(get_db),
 ):
@@ -385,6 +390,24 @@ def get_events(
         query = query.filter(models.Event.is_acknowledged == False)
     elif acknowledged == "true":
         query = query.filter(models.Event.is_acknowledged == True)
+    if date_from:
+        try:
+            dt_from = datetime.fromisoformat(date_from.replace("Z", "+00:00"))
+            query = query.filter(models.Event.created_at >= dt_from)
+        except ValueError:
+            pass
+    if date_to:
+        try:
+            dt_to = datetime.fromisoformat(date_to.replace("Z", "+00:00"))
+            query = query.filter(models.Event.created_at <= dt_to)
+        except ValueError:
+            pass
+    if mitre:
+        query = query.filter(models.Event.mitre_technique.ilike(f"%{mitre}%"))
+    if min_score is not None:
+        query = query.filter(models.Event.anomaly_score >= min_score)
+    if max_score is not None:
+        query = query.filter(models.Event.anomaly_score <= max_score)
     return query.order_by(models.Event.id.desc()).limit(limit).all()
 
 
