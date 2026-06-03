@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import {
   Search, Filter, CheckCircle, Clock, RefreshCw,
   FileText, ChevronDown, ChevronUp, X, Loader2, AlertTriangle,
-  Calendar, Shield, SlidersHorizontal
+  Calendar, Shield, SlidersHorizontal, ChevronLeft, ChevronRight
 } from 'lucide-react';
 import { apiFetch } from '@/lib/auth';
 
@@ -76,6 +76,9 @@ export default function EventsPage() {
   const [mitreFilter, setMitreFilter]     = useState('');
   const [minScore, setMinScore]           = useState('');
   const [showAdvanced, setShowAdvanced]   = useState(false);
+  const [page, setPage]                   = useState(1);
+  const [pageSize, setPageSize]           = useState(50);
+  const [total, setTotal]                 = useState(0);
   const [expandedId, setExpandedId]       = useState<number | null>(null);
   const [report, setReport]               = useState<{ id: number; text: string } | null>(null);
   const [reportLoading, setReportLoading] = useState<number | null>(null);
@@ -88,35 +91,46 @@ export default function EventsPage() {
     return () => { if (debounceRef.current) clearTimeout(debounceRef.current); };
   }, [search]);
 
-  const loadEvents = useCallback(async (showRefresh = false) => {
+  const buildParams = useCallback((p: number) => {
+    const params = new URLSearchParams({
+      limit:  String(pageSize),
+      offset: String((p - 1) * pageSize),
+    });
+    if (severityFilter)  params.set('severity',    severityFilter);
+    if (debouncedSearch) params.set('search',       debouncedSearch);
+    if (ackFilter)       params.set('acknowledged', ackFilter);
+    if (mitreFilter)     params.set('mitre',        mitreFilter);
+    if (minScore)        params.set('min_score',    minScore);
+    if (datePreset) {
+      const { date_from, date_to } = getDateRange(datePreset);
+      if (date_from) params.set('date_from', date_from);
+      if (date_to)   params.set('date_to',   date_to);
+    }
+    return params;
+  }, [severityFilter, debouncedSearch, ackFilter, datePreset, mitreFilter, minScore, pageSize]);
+
+  const loadEvents = useCallback(async (showRefresh = false, targetPage = page) => {
     abortRef.current?.abort();
     abortRef.current = new AbortController();
     if (showRefresh) setRefreshing(true);
     try {
-      const params = new URLSearchParams({ limit: '200' });
-      if (severityFilter)  params.set('severity',    severityFilter);
-      if (debouncedSearch) params.set('search',       debouncedSearch);
-      if (ackFilter)       params.set('acknowledged', ackFilter);
-      if (mitreFilter)     params.set('mitre',        mitreFilter);
-      if (minScore)        params.set('min_score',    minScore);
-
-      if (datePreset) {
-        const { date_from, date_to } = getDateRange(datePreset);
-        if (date_from) params.set('date_from', date_from);
-        if (date_to)   params.set('date_to',   date_to);
-      }
-
-      const res = await apiFetch(`/api/events?${params.toString()}`, { signal: abortRef.current.signal });
-      if (res.ok) setEvents(await res.json());
+      const params = buildParams(targetPage);
+      const [eventsRes, countRes] = await Promise.all([
+        apiFetch(`/api/events?${params.toString()}`,       { signal: abortRef.current.signal }),
+        apiFetch(`/api/events/count?${params.toString()}`, { signal: abortRef.current.signal }),
+      ]);
+      if (eventsRes.ok) setEvents(await eventsRes.json());
+      if (countRes.ok)  { const d = await countRes.json(); setTotal(d.total); }
     } catch (e: unknown) {
       if (e instanceof Error && e.name === 'AbortError') return;
     } finally {
       setLoading(false);
       setRefreshing(false);
     }
-  }, [severityFilter, debouncedSearch, ackFilter, datePreset, mitreFilter, minScore]);
+  }, [buildParams, page]);
 
-  useEffect(() => { loadEvents(); }, [loadEvents]);
+  useEffect(() => { setPage(1); }, [severityFilter, debouncedSearch, ackFilter, datePreset, mitreFilter, minScore, pageSize]);
+  useEffect(() => { loadEvents(false, page); }, [page, buildParams]); // eslint-disable-line
 
   const acknowledge = async (id: number, e: React.MouseEvent) => {
     e.stopPropagation();
@@ -140,6 +154,17 @@ export default function EventsPage() {
   const clearAll = () => {
     setSearch(''); setSeverity(''); setAckFilter('');
     setDatePreset(''); setMitreFilter(''); setMinScore('');
+    setPage(1);
+  };
+
+  const totalPages  = Math.max(1, Math.ceil(total / pageSize));
+  const pageFrom    = total === 0 ? 0 : (page - 1) * pageSize + 1;
+  const pageTo      = Math.min(page * pageSize, total);
+
+  const goTo = (p: number) => {
+    if (p < 1 || p > totalPages) return;
+    setPage(p);
+    setExpandedId(null);
   };
 
   const hasFilters = !!(search || severityFilter || ackFilter || datePreset || mitreFilter || minScore);
@@ -147,6 +172,21 @@ export default function EventsPage() {
   const totalCritical = events.filter(e => e.severity === 'critical').length;
   const totalHigh     = events.filter(e => e.severity === 'high').length;
   const unacked       = events.filter(e => !e.is_acknowledged && (e.severity === 'critical' || e.severity === 'high')).length;
+
+  // Page number buttons to show (window of 5)
+  const pageButtons = () => {
+    const pages: (number | '...')[] = [];
+    if (totalPages <= 7) {
+      for (let i = 1; i <= totalPages; i++) pages.push(i);
+    } else {
+      pages.push(1);
+      if (page > 3) pages.push('...');
+      for (let i = Math.max(2, page - 1); i <= Math.min(totalPages - 1, page + 1); i++) pages.push(i);
+      if (page < totalPages - 2) pages.push('...');
+      pages.push(totalPages);
+    }
+    return pages;
+  };
 
   if (loading) return null;
 
@@ -159,7 +199,9 @@ export default function EventsPage() {
           <h1 className="text-xl font-black text-white tracking-tight">
             Anomaly <span className="text-blue-400">Events</span>
           </h1>
-          <p className="text-xs text-slate-600 font-mono mt-0.5">{events.length} events loaded</p>
+          <p className="text-xs text-slate-600 font-mono mt-0.5">
+            {total > 0 ? `${pageFrom}–${pageTo} of ${total} events` : 'No events'}
+          </p>
         </div>
         <button
           onClick={() => loadEvents(true)}
@@ -479,6 +521,71 @@ export default function EventsPage() {
           ))}
         </div>
       </div>
+
+      {/* ── Pagination ─────────────────────────────────────────────────── */}
+      {totalPages > 1 && (
+        <div className="flex items-center justify-between">
+          {/* Page size selector */}
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] text-slate-600">Rows per page:</span>
+            {[25, 50, 100].map(s => (
+              <button
+                key={s}
+                onClick={() => setPageSize(s)}
+                className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all ${
+                  pageSize === s
+                    ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                    : 'bg-white/[0.04] text-slate-500 hover:text-white border border-white/[0.06]'
+                }`}
+              >
+                {s}
+              </button>
+            ))}
+          </div>
+
+          {/* Page buttons */}
+          <div className="flex items-center gap-1">
+            <button
+              onClick={() => goTo(page - 1)}
+              disabled={page === 1}
+              className="p-1.5 rounded-lg bg-white/[0.04] border border-white/[0.06] text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              <ChevronLeft size={14} />
+            </button>
+
+            {pageButtons().map((p, i) =>
+              p === '...' ? (
+                <span key={`dots-${i}`} className="px-2 text-slate-600 text-xs">…</span>
+              ) : (
+                <button
+                  key={p}
+                  onClick={() => goTo(p as number)}
+                  className={`w-8 h-8 rounded-lg text-xs font-semibold transition-all ${
+                    page === p
+                      ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                      : 'bg-white/[0.04] text-slate-400 hover:text-white border border-white/[0.06]'
+                  }`}
+                >
+                  {p}
+                </button>
+              )
+            )}
+
+            <button
+              onClick={() => goTo(page + 1)}
+              disabled={page === totalPages}
+              className="p-1.5 rounded-lg bg-white/[0.04] border border-white/[0.06] text-slate-400 hover:text-white disabled:opacity-30 disabled:cursor-not-allowed transition-all"
+            >
+              <ChevronRight size={14} />
+            </button>
+          </div>
+
+          {/* Total info */}
+          <span className="text-[11px] text-slate-600 font-mono">
+            Page {page} of {totalPages}
+          </span>
+        </div>
+      )}
     </div>
   );
 }

@@ -363,20 +363,18 @@ def _calculate_severity(score: float, techniques: list) -> str:
         return "normal"
 
 
-@app.get("/events", response_model=list[schemas.EventOut])
-def get_events(
-    limit: int = 200,
-    severity: str | None = None,
-    search: str | None = None,
-    acknowledged: str | None = None,
-    date_from: str | None = None,
-    date_to: str | None = None,
-    mitre: str | None = None,
-    min_score: float | None = None,
-    max_score: float | None = None,
-    api_key: str = Depends(verify_api_key),
-    db: Session = Depends(get_db),
+def _build_events_query(
+    db: Session,
+    severity: str | None,
+    search: str | None,
+    acknowledged: str | None,
+    date_from: str | None,
+    date_to: str | None,
+    mitre: str | None,
+    min_score: float | None,
+    max_score: float | None,
 ):
+    """Shared query builder for /events and /events/count."""
     query = db.query(models.Event)
     if severity:
         query = query.filter(models.Event.severity == severity)
@@ -408,7 +406,44 @@ def get_events(
         query = query.filter(models.Event.anomaly_score >= min_score)
     if max_score is not None:
         query = query.filter(models.Event.anomaly_score <= max_score)
-    return query.order_by(models.Event.id.desc()).limit(limit).all()
+    return query
+
+
+@app.get("/events/count")
+def count_events(
+    severity: str | None = None,
+    search: str | None = None,
+    acknowledged: str | None = None,
+    date_from: str | None = None,
+    date_to: str | None = None,
+    mitre: str | None = None,
+    min_score: float | None = None,
+    max_score: float | None = None,
+    api_key: str = Depends(verify_api_key),
+    db: Session = Depends(get_db),
+):
+    """Return total count of events matching the current filters."""
+    query = _build_events_query(db, severity, search, acknowledged, date_from, date_to, mitre, min_score, max_score)
+    return {"total": query.count()}
+
+
+@app.get("/events", response_model=list[schemas.EventOut])
+def get_events(
+    limit: int = 50,
+    offset: int = 0,
+    severity: str | None = None,
+    search: str | None = None,
+    acknowledged: str | None = None,
+    date_from: str | None = None,
+    date_to: str | None = None,
+    mitre: str | None = None,
+    min_score: float | None = None,
+    max_score: float | None = None,
+    api_key: str = Depends(verify_api_key),
+    db: Session = Depends(get_db),
+):
+    query = _build_events_query(db, severity, search, acknowledged, date_from, date_to, mitre, min_score, max_score)
+    return query.order_by(models.Event.id.desc()).offset(offset).limit(limit).all()
 
 
 @app.patch("/events/{event_id}/acknowledge")
