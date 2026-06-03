@@ -21,8 +21,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_KEY      = "soc_diploma_secret_2026"
-JWT_SECRET   = "sentinel_soc_jwt_2026_secure"
+API_KEY      = os.getenv("API_KEY", "soc_diploma_secret_2026")
+JWT_SECRET   = os.getenv("JWT_SECRET", "sentinel_soc_jwt_2026_secure")
 JWT_ALGO     = "HS256"
 # Email that always gets the "admin" role on registration (configurable via .env)
 ADMIN_EMAIL  = os.getenv("ADMIN_EMAIL", "admin@sentinel.ai")
