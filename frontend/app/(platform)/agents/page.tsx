@@ -91,7 +91,7 @@ export default function AgentsPage() {
       {/* Header */}
       <div>
         <h1 className="text-xl font-black text-white tracking-tight">
-          Endpoint <span className="text-blue-400">Agents</span>
+          Endpoint <span className="text-emerald-400">Agents</span>
         </h1>
         <p className="text-xs text-slate-500 font-mono mt-0.5">
           Deploy lightweight collectors to any device for real-time process monitoring
@@ -104,11 +104,11 @@ export default function AgentsPage() {
         animate={{ opacity: 1, y: 0 }}
         className="glass-elevated rounded-2xl p-6 relative overflow-hidden"
       >
-        <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-blue-600/10 blur-3xl pointer-events-none" />
+        <div className="absolute -right-12 -top-12 w-48 h-48 rounded-full bg-emerald-600/8 blur-3xl pointer-events-none" />
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-3">
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center shadow-lg shadow-blue-500/20">
+              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center shadow-lg shadow-emerald-500/20">
                 <Shield size={18} className="text-white" />
               </div>
               <div>
@@ -123,7 +123,7 @@ export default function AgentsPage() {
             </p>
             <div className="flex flex-wrap gap-2 mt-4">
               {['psutil', 'requests', 'Isolation Forest', 'Real Processes', 'Cross-Platform'].map(tag => (
-                <span key={tag} className="px-2.5 py-1 rounded-lg bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-400 font-semibold">
+                <span key={tag} className="px-2.5 py-1 rounded-lg bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-400 font-semibold">
                   {tag}
                 </span>
               ))}
@@ -132,7 +132,7 @@ export default function AgentsPage() {
           <button
             onClick={downloadAgent}
             disabled={downloading}
-            className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold transition-all hover:brightness-110 disabled:opacity-50 shadow-lg shadow-blue-500/20 whitespace-nowrap shrink-0"
+            className="flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-blue-600 text-white text-xs font-bold transition-all hover:brightness-110 disabled:opacity-50 shadow-lg shadow-emerald-500/20 whitespace-nowrap shrink-0"
           >
             <Download size={14} className={downloading ? 'animate-bounce' : ''} />
             {downloading ? 'Downloading...' : 'Download agent.py'}
@@ -166,14 +166,14 @@ export default function AgentsPage() {
               className="flex gap-5 p-6"
             >
               <div className="flex flex-col items-center gap-2 shrink-0">
-                <div className="w-9 h-9 rounded-xl bg-blue-600/15 border border-blue-500/20 flex items-center justify-center">
-                  <Icon size={16} className="text-blue-400" />
+                <div className="w-9 h-9 rounded-xl bg-emerald-600/15 border border-emerald-500/20 flex items-center justify-center">
+                  <Icon size={16} className="text-emerald-400" />
                 </div>
                 {i < STEPS.length - 1 && <div className="w-px flex-1 bg-white/[0.05] min-h-[20px]" />}
               </div>
               <div className="flex-1 pt-1">
                 <div className="flex items-center gap-2 mb-2">
-                  <span className="text-[10px] text-blue-500 font-mono font-bold">{num}</span>
+                  <span className="text-[10px] text-emerald-500 font-mono font-bold">{num}</span>
                   <h3 className="text-sm font-bold text-white">{title}</h3>
                 </div>
                 <p className="text-xs text-slate-400 leading-relaxed">{desc}</p>
@@ -197,7 +197,7 @@ export default function AgentsPage() {
             { field: 'source_ip',    desc: 'Agent\'s IP address' },
           ].map(({ field, desc }) => (
             <div key={field} className="flex items-start gap-2.5 p-3 bg-white/[0.02] rounded-xl border border-white/[0.05]">
-              <ArrowRight size={12} className="text-blue-400 mt-0.5 shrink-0" />
+              <ArrowRight size={12} className="text-emerald-400 mt-0.5 shrink-0" />
               <div>
                 <code className="text-[11px] text-emerald-300 font-mono">{field}</code>
                 <p className="text-[10px] text-slate-500 mt-0.5">{desc}</p>

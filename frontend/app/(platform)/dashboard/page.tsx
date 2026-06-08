@@ -144,7 +144,7 @@ export default function DashboardPage() {
       <div className="flex items-center justify-between flex-wrap gap-3">
         <div>
           <h1 className="text-xl font-black text-white tracking-tight">
-            Operations <span className="text-blue-400">Dashboard</span>
+            Operations <span className="text-emerald-400">Dashboard</span>
           </h1>
           <p className="text-xs text-slate-600 font-mono mt-0.5 flex items-center gap-2">
             <Clock size={11} />
@@ -160,7 +160,7 @@ export default function DashboardPage() {
             Refresh
           </button>
           <button onClick={runSim} disabled={simulating}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600/80 hover:bg-blue-600 text-white text-xs font-bold transition-all disabled:opacity-50 shadow-lg shadow-blue-500/20">
+            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600/80 hover:bg-emerald-600 text-white text-xs font-bold transition-all disabled:opacity-50 shadow-lg shadow-emerald-500/20">
             <Zap size={13} className={simulating ? 'animate-pulse' : ''} />
             {simulating ? 'Simulating...' : 'Simulate Attack'}
           </button>
@@ -170,7 +170,7 @@ export default function DashboardPage() {
       {/* Stat cards */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {([
-          { label: 'Total Events',    value: stats?.total ?? 0,                   icon: Activity,      c: 'text-blue-400',   glow: 'stat-card-glow-blue',   sub: 'All ingested events'   },
+          { label: 'Total Events',    value: stats?.total ?? 0,                   icon: Activity,      c: 'text-emerald-400',   glow: 'stat-card-glow-green',   sub: 'All ingested events'   },
           { label: 'Critical / High', value: `${critical} / ${high}`,            icon: AlertTriangle, c: 'text-red-400',    glow: 'stat-card-glow-red',    sub: 'Active threat levels'  },
           { label: 'Avg ML Score',    value: stats?.avg_score?.toFixed(3) ?? '—', icon: TrendingUp,    c: 'text-purple-400', glow: 'stat-card-glow-purple', sub: 'Isolation Forest'      },
           { label: 'Needs Action',    value: stats?.unacknowledged_critical ?? 0, icon: ShieldAlert,   c: 'text-orange-400', glow: 'stat-card-glow-orange', sub: 'Unacknowledged C/H'   },
@@ -194,7 +194,7 @@ export default function DashboardPage() {
         <div className="lg:col-span-2 glass rounded-2xl p-5">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xs font-black text-white uppercase tracking-tight flex items-center gap-2">
-              <BarChart3 size={13} className="text-blue-400" />
+              <BarChart3 size={13} className="text-emerald-400" />
               Anomaly Score Timeline
             </h2>
             <span className="text-[10px] text-slate-600 font-mono">last {allEvts.length} events</span>
@@ -217,7 +217,7 @@ export default function DashboardPage() {
         <div className="lg:col-span-2 glass rounded-2xl overflow-hidden">
           <div className="flex items-center justify-between px-5 py-4 border-b border-white/[0.05]">
             <h2 className="text-xs font-black text-white uppercase tracking-tight">Recent Events</h2>
-            <Link href="/events" className="flex items-center gap-1 text-[10px] text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+            <Link href="/events" className="flex items-center gap-1 text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
               View all <ChevronRight size={12} />
             </Link>
           </div>
@@ -240,7 +240,7 @@ export default function DashboardPage() {
                   <p className="text-xs font-bold text-slate-300 font-mono">{ev.anomaly_score.toFixed(3)}</p>
                   {!ev.is_acknowledged && (ev.severity === 'critical' || ev.severity === 'high') && (
                     <button onClick={() => ack(ev.id)}
-                      className="text-[10px] text-blue-400 hover:text-blue-300 font-semibold mt-0.5 transition-colors">
+                      className="text-[10px] text-emerald-400 hover:text-emerald-300 font-semibold mt-0.5 transition-colors">
                       ACK
                     </button>
                   )}
@@ -263,14 +263,14 @@ export default function DashboardPage() {
                     <div className="flex items-center gap-2 mb-1">
                       <span className="text-[9px] text-slate-700 font-mono w-3">{i + 1}</span>
                       <span className="flex-1 text-[11px] text-slate-300 font-mono truncate">{p.name}</span>
-                      <span className="text-[10px] text-blue-400 font-bold font-mono">{p.count}</span>
+                      <span className="text-[10px] text-emerald-400 font-bold font-mono">{p.count}</span>
                     </div>
                     <div className="h-0.5 bg-white/[0.04] rounded-full overflow-hidden ml-5">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${(p.count / max) * 100}%` }}
                         transition={{ duration: 0.5, delay: i * 0.05 }}
-                        className="h-full bg-blue-500/50 rounded-full"
+                        className="h-full bg-emerald-500/50 rounded-full"
                       />
                     </div>
                   </div>
@@ -287,7 +287,7 @@ export default function DashboardPage() {
             <h3 className="text-xs font-black text-white uppercase tracking-tight mb-3">Quick Actions</h3>
             <div className="space-y-2">
               {([
-                { href: '/agents',    icon: Cpu,       color: 'text-blue-400',    label: 'Connect Endpoint Agent' },
+                { href: '/agents',    icon: Cpu,       color: 'text-emerald-400', label: 'Connect Endpoint Agent' },
                 { href: '/analytics', icon: TrendingUp, color: 'text-purple-400',  label: 'View ML Analytics'      },
                 { href: '/events',    icon: Activity,   color: 'text-emerald-400', label: 'Browse All Events'      },
               ] as const).map(({ href, icon: Icon, color, label }) => (

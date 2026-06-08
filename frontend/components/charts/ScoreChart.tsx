@@ -11,7 +11,7 @@ function CustomTooltip({ active, payload }: { active?: boolean; payload?: { valu
   return (
     <div className="bg-[#0d1b2e] border border-white/10 rounded-xl px-3 py-2 shadow-xl text-xs">
       <p className="text-slate-400 font-mono mb-0.5">{payload[0]?.payload?.label}</p>
-      <p className="text-blue-400 font-bold font-mono">Score: {payload[0]?.value?.toFixed(3)}</p>
+      <p className="text-emerald-400 font-bold font-mono">Score: {payload[0]?.value?.toFixed(3)}</p>
     </div>
   );
 }

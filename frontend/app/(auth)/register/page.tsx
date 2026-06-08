@@ -82,14 +82,14 @@ export default function RegisterPage() {
   return (
     <div className="min-h-screen bg-[#010b18] flex items-center justify-center relative overflow-hidden py-8">
       <div className="absolute inset-0 bg-grid opacity-[0.08] pointer-events-none" />
-      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-indigo-600/10 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[110px] pointer-events-none" />
+      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-emerald-600/8 blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-blue-600/8 blur-[110px] pointer-events-none" />
 
       {/* Corner brackets */}
       {['top-0 left-0 border-t border-l', 'top-0 right-0 border-t border-r', 'bottom-0 left-0 border-b border-l', 'bottom-0 right-0 border-b border-r'].map((pos, i) => (
         <motion.div key={i} initial={{ width: 0, height: 0 }} animate={{ width: 60, height: 60 }}
           transition={{ duration: 0.5, delay: i * 0.08 }}
-          className={`absolute ${pos} border-blue-500/15 pointer-events-none`} />
+          className={`absolute ${pos} border-emerald-500/15 pointer-events-none`} />
       ))}
 
       <motion.div
@@ -107,11 +107,11 @@ export default function RegisterPage() {
         <div className="flex flex-col items-center mb-8">
           <motion.div initial={{ scale: 0.7, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.45, delay: 0.1, type: 'spring', bounce: 0.3 }}
-            className="p-4 bg-gradient-to-br from-indigo-500 to-blue-700 rounded-[1.5rem] shadow-2xl shadow-indigo-500/30 ring-1 ring-white/10 mb-5">
+            className="p-4 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-[1.5rem] shadow-2xl shadow-emerald-500/30 ring-1 ring-white/10 mb-5">
             <ShieldAlert className="w-10 h-10 text-white" />
           </motion.div>
-          <h1 className="text-3xl font-black tracking-tighter text-white">
-            SENTINEL<span className="text-blue-400">CORE</span>
+          <h1 className="text-3xl font-black tracking-tighter text-white font-mono">
+            SENTINEL<span className="text-emerald-400">AI</span>
           </h1>
           <p className="text-slate-500 text-[10px] font-mono tracking-[0.2em] uppercase mt-1.5">
             Create your analyst account
@@ -120,11 +120,11 @@ export default function RegisterPage() {
 
         {/* Card */}
         <div className="glass-elevated rounded-[2rem] p-8 relative overflow-hidden">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-indigo-500/40 to-transparent" />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent" />
 
           <div className="flex items-center gap-3 mb-6">
-            <div className="w-8 h-8 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center">
-              <Fingerprint size={16} className="text-indigo-400" />
+            <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+              <Fingerprint size={16} className="text-emerald-400" />
             </div>
             <div>
               <h2 className="text-sm font-black text-white uppercase tracking-tight">Create Account</h2>
@@ -141,7 +141,7 @@ export default function RegisterPage() {
                 <input
                   value={form.username} onChange={set('username')}
                   placeholder="johndoe" autoComplete="username"
-                  className="w-full bg-black/40 border border-white/[0.07] focus:border-blue-500/50 rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
+                  className="w-full bg-black/40 border border-white/[0.07] focus:border-emerald-500/50 rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
                 />
               </div>
             </div>
@@ -154,7 +154,7 @@ export default function RegisterPage() {
                 <input
                   value={form.email} onChange={set('email')}
                   type="email" placeholder="analyst@company.com" autoComplete="email"
-                  className="w-full bg-black/40 border border-white/[0.07] focus:border-blue-500/50 rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
+                  className="w-full bg-black/40 border border-white/[0.07] focus:border-emerald-500/50 rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
                 />
               </div>
             </div>
@@ -168,7 +168,7 @@ export default function RegisterPage() {
                   value={form.password} onChange={set('password')}
                   type={showPass ? 'text' : 'password'} placeholder="Min. 8 characters"
                   autoComplete="new-password"
-                  className="w-full bg-black/40 border border-white/[0.07] focus:border-blue-500/50 rounded-xl pl-10 pr-11 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
+                  className="w-full bg-black/40 border border-white/[0.07] focus:border-emerald-500/50 rounded-xl pl-10 pr-11 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
                 />
                 <button type="button" onClick={() => setShow(v => !v)}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-300 transition-colors">
@@ -190,7 +190,7 @@ export default function RegisterPage() {
                   className={`w-full bg-black/40 border rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors ${
                     form.confirm && form.confirm !== form.password
                       ? 'border-red-500/40 focus:border-red-500/60'
-                      : 'border-white/[0.07] focus:border-blue-500/50'
+                      : 'border-white/[0.07] focus:border-emerald-500/50'
                   }`}
                 />
                 {form.confirm && form.confirm === form.password && (
@@ -215,7 +215,7 @@ export default function RegisterPage() {
             <motion.button
               whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}
               type="submit" disabled={loading || !ready}
-              className="w-full py-3.5 rounded-2xl font-black text-[11px] uppercase tracking-widest bg-gradient-to-r from-indigo-600 to-blue-600 text-white shadow-lg shadow-indigo-500/20 hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 relative overflow-hidden group"
+              className="w-full py-3.5 rounded-2xl font-black text-[11px] uppercase tracking-widest bg-gradient-to-r from-emerald-600 to-blue-600 text-white shadow-lg shadow-emerald-500/20 hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2 relative overflow-hidden group"
             >
               <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               {loading ? <><Activity size={13} className="animate-spin" /> Creating account...</> : 'Create Account'}
@@ -225,7 +225,7 @@ export default function RegisterPage() {
           <div className="mt-5 pt-5 border-t border-white/[0.05] text-center">
             <p className="text-[11px] text-slate-600">
               Already have an account?{' '}
-              <Link href="/login" className="text-blue-400 hover:text-blue-300 font-semibold transition-colors">
+              <Link href="/login" className="text-emerald-400 hover:text-emerald-300 font-semibold transition-colors">
                 Sign in
               </Link>
             </p>

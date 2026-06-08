@@ -129,7 +129,7 @@ function SensitiveSection() {
 
       {loading && (
         <div className="flex items-center gap-3 text-xs text-slate-500">
-          <div className="w-4 h-4 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+          <div className="w-4 h-4 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
           Loading secrets...
         </div>
       )}
@@ -160,8 +160,8 @@ function SensitiveSection() {
             ))}
           </div>
 
-          <div className="p-4 bg-blue-500/[0.06] border border-blue-500/15 rounded-xl">
-            <p className="text-[10px] text-blue-400 font-semibold mb-1">Authentication Flow</p>
+          <div className="p-4 bg-emerald-500/[0.06] border border-emerald-500/15 rounded-xl">
+            <p className="text-[10px] text-emerald-400 font-semibold mb-1">Authentication Flow</p>
             <p className="text-[10px] text-slate-400 leading-relaxed">
               Frontend authenticates via <code className="font-mono bg-white/10 px-1 rounded">POST /api/auth/login</code> and stores a 24-hour JWT.
               All API calls include both a <code className="font-mono bg-white/10 px-1 rounded">Bearer</code> token and the X-API-Key as fallback.
@@ -302,7 +302,7 @@ function TelegramSection() {
               value={botToken}
               onChange={e => setBotToken(e.target.value)}
               placeholder="1234567890:AABBccDDeeFF..."
-              className="flex-1 bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-blue-500/40 focus:bg-black/60 transition-colors"
+              className="flex-1 bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-emerald-500/40 focus:bg-black/60 transition-colors"
             />
             <button
               onClick={() => setShowToken(v => !v)}
@@ -324,7 +324,7 @@ function TelegramSection() {
             value={chatId}
             onChange={e => setChatId(e.target.value)}
             placeholder="-1001234567890 или 123456789"
-            className="w-full bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-blue-500/40 focus:bg-black/60 transition-colors"
+            className="w-full bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-emerald-500/40 focus:bg-black/60 transition-colors"
           />
         </div>
 
@@ -338,7 +338,7 @@ function TelegramSection() {
             value={webhookUrl}
             onChange={e => setWebhookUrl(e.target.value)}
             placeholder="https://hooks.slack.com/services/..."
-            className="w-full bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-blue-500/40 focus:bg-black/60 transition-colors"
+            className="w-full bg-black/40 border border-white/[0.07] rounded-xl px-4 py-2.5 text-xs font-mono text-slate-200 placeholder-slate-700 outline-none focus:border-emerald-500/40 focus:bg-black/60 transition-colors"
           />
         </div>
       </div>
@@ -348,7 +348,7 @@ function TelegramSection() {
         <button
           onClick={save}
           disabled={saving || (!botToken && !chatId)}
-          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-blue-600/80 hover:bg-blue-600 text-white text-xs font-bold transition-all disabled:opacity-40 shadow-lg shadow-blue-500/20"
+          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-emerald-600/80 hover:bg-emerald-600 text-white text-xs font-bold transition-all disabled:opacity-40 shadow-lg shadow-emerald-500/20"
         >
           <Save size={13} className={saving ? 'animate-pulse' : ''} />
           {saving ? 'Сохранение...' : 'Сохранить'}
@@ -375,13 +375,13 @@ function TelegramSection() {
         <p className="text-[9px] text-slate-600 uppercase tracking-widest font-bold mb-3">Как настроить</p>
         <ol className="space-y-2">
           {[
-            <>Напиши <a href="https://t.me/BotFather" target="_blank" rel="noreferrer" className="text-blue-400 hover:underline">@BotFather</a> в Telegram → <code className="font-mono bg-white/10 px-1 rounded">/newbot</code> → скопируй токен</>,
+            <>Напиши <a href="https://t.me/BotFather" target="_blank" rel="noreferrer" className="text-emerald-400 hover:underline">@BotFather</a> в Telegram → <code className="font-mono bg-white/10 px-1 rounded">/newbot</code> → скопируй токен</>,
             <>Напиши любое сообщение своему боту, затем открой{' '}<code className="font-mono bg-white/10 px-1 rounded text-[9px]">api.telegram.org/bot{'<TOKEN>'}/getUpdates</code> — найди <code className="font-mono bg-white/10 px-1 rounded">chat.id</code></>,
             <>Для канала: добавь бота как администратора, используй ID канала (начинается с <code className="font-mono bg-white/10 px-1 rounded">-100</code>)</>,
             <>Вставь токен и chat ID выше, нажми <b>Сохранить</b>, затем <b>Тест</b> — получишь сообщение в Telegram</>,
           ].map((step, i) => (
             <li key={i} className="flex items-start gap-2.5">
-              <span className="w-4 h-4 rounded-full bg-blue-600/15 border border-blue-500/20 flex items-center justify-center text-[9px] font-bold text-blue-400 shrink-0 mt-0.5">{i + 1}</span>
+              <span className="w-4 h-4 rounded-full bg-emerald-600/15 border border-emerald-500/20 flex items-center justify-center text-[9px] font-bold text-emerald-400 shrink-0 mt-0.5">{i + 1}</span>
               <span className="text-[10px] text-slate-400 leading-relaxed">{step}</span>
             </li>
           ))}
@@ -414,7 +414,7 @@ export default function SettingsPage() {
       {/* Header */}
       <div>
         <h1 className="text-xl font-black text-white tracking-tight">
-          Platform <span className="text-blue-400">Settings</span>
+          Platform <span className="text-emerald-400">Settings</span>
         </h1>
         <p className="text-xs text-slate-500 font-mono mt-0.5">
           Configuration, secrets, and model management

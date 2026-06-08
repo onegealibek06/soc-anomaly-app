@@ -89,7 +89,7 @@ export default function AnalyticsPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-black text-white tracking-tight">
-            ML <span className="text-blue-400">Analytics</span>
+            ML <span className="text-emerald-400">Analytics</span>
           </h1>
           <p className="text-xs text-slate-600 font-mono mt-0.5">Isolation Forest model performance &amp; event distribution</p>
         </div>
@@ -106,7 +106,7 @@ export default function AnalyticsPage() {
       {/* Top KPIs */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         {[
-          { label: 'Total Events',  value: stats?.total ?? 0,             icon: BarChart3,   color: 'text-blue-400'   },
+          { label: 'Total Events',  value: stats?.total ?? 0,             icon: BarChart3,   color: 'text-emerald-400'   },
           { label: 'Avg ML Score',  value: stats?.avg_score?.toFixed(4) ?? '—', icon: TrendingUp, color: 'text-purple-400' },
           { label: 'Critical',      value: bySevm.critical ?? 0,          icon: AlertCircle, color: 'text-red-400'    },
           { label: 'High',          value: bySevm.high ?? 0,              icon: Target,      color: 'text-orange-400' },
@@ -186,14 +186,14 @@ export default function AnalyticsPage() {
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center justify-between mb-1">
                       <span className="text-[11px] text-slate-200 font-mono truncate max-w-[200px]">{p.name}</span>
-                      <span className="text-[11px] font-bold text-blue-400 font-mono ml-2">{p.count}</span>
+                      <span className="text-[11px] font-bold text-emerald-400 font-mono ml-2">{p.count}</span>
                     </div>
                     <div className="h-1 bg-white/[0.05] rounded-full overflow-hidden">
                       <motion.div
                         initial={{ width: 0 }}
                         animate={{ width: `${pct}%` }}
                         transition={{ duration: 0.6, ease: 'easeOut', delay: i * 0.05 }}
-                        className="h-full rounded-full bg-blue-500/60"
+                        className="h-full rounded-full bg-emerald-500/60"
                       />
                     </div>
                   </div>

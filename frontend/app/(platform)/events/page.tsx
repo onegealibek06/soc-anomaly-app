@@ -197,7 +197,7 @@ export default function EventsPage() {
       <div className="flex items-center justify-between">
         <div>
           <h1 className="text-xl font-black text-white tracking-tight">
-            Anomaly <span className="text-blue-400">Events</span>
+            Anomaly <span className="text-emerald-400">Events</span>
           </h1>
           <p className="text-xs text-slate-600 font-mono mt-0.5">
             {total > 0 ? `${pageFrom}–${pageTo} of ${total} events` : 'No events'}
@@ -219,7 +219,7 @@ export default function EventsPage() {
           { label: 'Critical',  value: totalCritical, color: 'text-red-400',    bg: 'bg-red-500/10 border-red-500/20'       },
           { label: 'High',      value: totalHigh,     color: 'text-orange-400', bg: 'bg-orange-500/10 border-orange-500/20' },
           { label: 'Needs ACK', value: unacked,       color: 'text-yellow-400', bg: 'bg-yellow-500/10 border-yellow-500/20' },
-          { label: 'Total',     value: events.length, color: 'text-blue-400',   bg: 'bg-blue-500/10 border-blue-500/20'     },
+          { label: 'Total',     value: events.length, color: 'text-emerald-400', bg: 'bg-emerald-500/10 border-emerald-500/20'  },
         ].map(({ label, value, color, bg }) => (
           <div key={label} className={`flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-bold ${bg} ${color}`}>
             <AlertTriangle size={11} />
@@ -239,7 +239,7 @@ export default function EventsPage() {
               value={search}
               onChange={e => setSearch(e.target.value)}
               placeholder="Search process, command, user..."
-              className="w-full bg-black/30 border border-white/[0.07] focus:border-blue-500/40 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors"
+              className="w-full bg-black/30 border border-white/[0.07] focus:border-emerald-500/40 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors"
             />
             {search && (
               <button onClick={() => setSearch('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-400">
@@ -251,7 +251,7 @@ export default function EventsPage() {
           <select
             value={severityFilter}
             onChange={e => setSeverity(e.target.value)}
-            className="bg-black/30 border border-white/[0.07] focus:border-blue-500/40 rounded-xl px-3 py-2.5 text-xs text-slate-400 outline-none transition-colors"
+            className="bg-black/30 border border-white/[0.07] focus:border-emerald-500/40 rounded-xl px-3 py-2.5 text-xs text-slate-400 outline-none transition-colors"
           >
             <option value="">All Severities</option>
             <option value="critical">Critical</option>
@@ -264,7 +264,7 @@ export default function EventsPage() {
           <select
             value={ackFilter}
             onChange={e => setAckFilter(e.target.value)}
-            className="bg-black/30 border border-white/[0.07] focus:border-blue-500/40 rounded-xl px-3 py-2.5 text-xs text-slate-400 outline-none transition-colors"
+            className="bg-black/30 border border-white/[0.07] focus:border-emerald-500/40 rounded-xl px-3 py-2.5 text-xs text-slate-400 outline-none transition-colors"
           >
             <option value="">All Status</option>
             <option value="false">Unacknowledged</option>
@@ -275,7 +275,7 @@ export default function EventsPage() {
             onClick={() => setShowAdvanced(v => !v)}
             className={`flex items-center gap-2 px-3 py-2 rounded-xl border text-xs font-semibold transition-all ${
               showAdvanced
-                ? 'bg-blue-500/10 border-blue-500/30 text-blue-400'
+                ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400'
                 : 'bg-white/[0.04] border-white/[0.06] text-slate-400 hover:text-white hover:bg-white/[0.07]'
             }`}
           >
@@ -315,7 +315,7 @@ export default function EventsPage() {
                       onClick={() => setDatePreset(p.value)}
                       className={`px-2 py-0.5 rounded-lg text-[10px] font-semibold transition-all ${
                         datePreset === p.value
-                          ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                          ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
                           : 'text-slate-500 hover:text-slate-300'
                       }`}
                     >
@@ -331,7 +331,7 @@ export default function EventsPage() {
                     value={mitreFilter}
                     onChange={e => setMitreFilter(e.target.value)}
                     placeholder="MITRE technique (e.g. T1059)"
-                    className="bg-black/30 border border-white/[0.07] focus:border-blue-500/40 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors w-56"
+                    className="bg-black/30 border border-white/[0.07] focus:border-emerald-500/40 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors w-56"
                   />
                   {mitreFilter && (
                     <button onClick={() => setMitreFilter('')} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-400">
@@ -348,9 +348,9 @@ export default function EventsPage() {
                     min="0" max="1" step="0.05"
                     value={minScore || '0'}
                     onChange={e => setMinScore(e.target.value === '0' ? '' : e.target.value)}
-                    className="w-24 accent-blue-500"
+                    className="w-24 accent-emerald-500"
                   />
-                  <span className="text-[11px] text-blue-400 font-mono w-8">
+                  <span className="text-[11px] text-emerald-400 font-mono w-8">
                     {minScore ? parseFloat(minScore).toFixed(2) : '0.00'}
                   </span>
                   {minScore && (
@@ -379,7 +379,7 @@ export default function EventsPage() {
               </span>
             )}
             {datePreset && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-semibold">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[10px] font-semibold">
                 <Calendar size={9} /> {DATE_PRESETS.find(p => p.value === datePreset)?.label} <button onClick={() => setDatePreset('')}><X size={10} /></button>
               </span>
             )}
@@ -452,7 +452,7 @@ export default function EventsPage() {
                     onClick={(e) => loadReport(ev.id, e)}
                     title="AI Report"
                     disabled={reportLoading === ev.id}
-                    className="p-1.5 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 transition-colors border border-blue-500/20 disabled:opacity-50"
+                    className="p-1.5 rounded-lg bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 transition-colors border border-emerald-500/20 disabled:opacity-50"
                   >
                     {reportLoading === ev.id ? <Loader2 size={12} className="animate-spin" /> : <FileText size={12} />}
                   </button>
@@ -510,7 +510,7 @@ export default function EventsPage() {
                       {report?.id === ev.id && (
                         <div>
                           <span className="text-[10px] text-slate-600 uppercase tracking-wider block mb-1">Sentinel-AI Forensic Report</span>
-                          <pre className="text-[10px] text-slate-300 font-mono bg-black/30 rounded-lg p-3 whitespace-pre-wrap border border-blue-500/10 max-h-64 overflow-y-auto">{report.text}</pre>
+                          <pre className="text-[10px] text-slate-300 font-mono bg-black/30 rounded-lg p-3 whitespace-pre-wrap border border-emerald-500/10 max-h-64 overflow-y-auto">{report.text}</pre>
                         </div>
                       )}
                     </div>
@@ -534,7 +534,7 @@ export default function EventsPage() {
                 onClick={() => setPageSize(s)}
                 className={`px-2.5 py-1 rounded-lg text-[11px] font-semibold transition-all ${
                   pageSize === s
-                    ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                    ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
                     : 'bg-white/[0.04] text-slate-500 hover:text-white border border-white/[0.06]'
                 }`}
               >
@@ -562,7 +562,7 @@ export default function EventsPage() {
                   onClick={() => goTo(p as number)}
                   className={`w-8 h-8 rounded-lg text-xs font-semibold transition-all ${
                     page === p
-                      ? 'bg-blue-500/20 text-blue-400 border border-blue-500/30'
+                      ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
                       : 'bg-white/[0.04] text-slate-400 hover:text-white border border-white/[0.06]'
                   }`}
                 >

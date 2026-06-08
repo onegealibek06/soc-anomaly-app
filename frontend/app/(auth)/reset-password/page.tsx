@@ -48,14 +48,14 @@ function ResetForm() {
 
   return (
     <div className="glass-elevated rounded-[2rem] p-8 relative overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent" />
 
       <AnimatePresence mode="wait">
         {!done ? (
           <motion.div key="form" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-8 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center">
-                <KeyRound size={16} className="text-blue-400" />
+              <div className="w-8 h-8 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center">
+                <KeyRound size={16} className="text-emerald-400" />
               </div>
               <div>
                 <h2 className="text-sm font-black text-white uppercase tracking-tight">Set New Password</h2>
@@ -70,7 +70,7 @@ function ResetForm() {
                 <input
                   value={token} onChange={e => setToken(e.target.value)}
                   placeholder="Paste your reset token..."
-                  className="w-full bg-black/40 border border-white/[0.07] focus:border-blue-500/50 rounded-xl px-4 py-3 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors"
+                  className="w-full bg-black/40 border border-white/[0.07] focus:border-emerald-500/50 rounded-xl px-4 py-3 text-xs text-white font-mono placeholder-slate-700 outline-none transition-colors"
                 />
               </div>
             )}
@@ -84,7 +84,7 @@ function ResetForm() {
                     value={password} onChange={e => { setPass(e.target.value); setError(''); }}
                     type={showPass ? 'text' : 'password'} placeholder="Min. 8 characters"
                     autoComplete="new-password"
-                    className="w-full bg-black/40 border border-white/[0.07] focus:border-blue-500/50 rounded-xl pl-10 pr-11 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
+                    className="w-full bg-black/40 border border-white/[0.07] focus:border-emerald-500/50 rounded-xl pl-10 pr-11 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors"
                   />
                   <button type="button" onClick={() => setShow(v => !v)}
                     className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-slate-300 transition-colors">
@@ -102,7 +102,7 @@ function ResetForm() {
                     type="password" placeholder="Repeat password"
                     autoComplete="new-password"
                     className={`w-full bg-black/40 border rounded-xl pl-10 pr-4 py-3 text-sm text-white font-mono placeholder-slate-700 outline-none transition-colors ${
-                      confirm && confirm !== password ? 'border-red-500/40' : 'border-white/[0.07] focus:border-blue-500/50'
+                      confirm && confirm !== password ? 'border-red-500/40' : 'border-white/[0.07] focus:border-emerald-500/50'
                     }`}
                   />
                   {confirm && confirm === password && (
@@ -124,7 +124,7 @@ function ResetForm() {
               <motion.button
                 whileHover={{ scale: 1.01 }} whileTap={{ scale: 0.99 }}
                 type="submit" disabled={loading || !password || !confirm}
-                className="w-full py-3.5 rounded-2xl font-black text-[11px] uppercase tracking-widest bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/20 hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                className="w-full py-3.5 rounded-2xl font-black text-[11px] uppercase tracking-widest bg-gradient-to-r from-emerald-600 to-blue-600 text-white shadow-lg shadow-emerald-500/20 hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
               >
                 {loading ? <><Activity size={13} className="animate-spin" /> Updating...</> : 'Update Password'}
               </motion.button>
@@ -146,7 +146,7 @@ function ResetForm() {
             <h3 className="text-base font-black text-white mb-2">Password Updated!</h3>
             <p className="text-xs text-slate-400 mb-4">Your password has been reset. Redirecting to sign in...</p>
             <div className="flex justify-center">
-              <div className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
+              <div className="w-6 h-6 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" />
             </div>
           </motion.div>
         )}
@@ -165,8 +165,8 @@ export default function ResetPasswordPage() {
   return (
     <div className="min-h-screen bg-[#010b18] flex items-center justify-center relative overflow-hidden">
       <div className="absolute inset-0 bg-grid opacity-[0.08] pointer-events-none" />
-      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-blue-600/10 blur-[130px] pointer-events-none" />
-      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-indigo-600/10 blur-[110px] pointer-events-none" />
+      <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] rounded-full bg-emerald-600/8 blur-[130px] pointer-events-none" />
+      <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-blue-600/8 blur-[110px] pointer-events-none" />
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.45 }} className="w-full max-w-md px-6 relative z-10">
@@ -176,15 +176,15 @@ export default function ResetPasswordPage() {
         </Link>
 
         <div className="flex flex-col items-center mb-8">
-          <div className="p-4 bg-gradient-to-br from-blue-500 to-indigo-700 rounded-[1.5rem] shadow-2xl shadow-blue-500/30 ring-1 ring-white/10 mb-5">
+          <div className="p-4 bg-gradient-to-br from-emerald-500 to-blue-600 rounded-[1.5rem] shadow-2xl shadow-emerald-500/30 ring-1 ring-white/10 mb-5">
             <ShieldAlert className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-3xl font-black tracking-tighter text-white">
-            SENTINEL<span className="text-blue-400">CORE</span>
+            SENTINEL<span className="text-emerald-400">AI</span>
           </h1>
         </div>
 
-        <Suspense fallback={<div className="h-64 flex items-center justify-center"><div className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" /></div>}>
+        <Suspense fallback={<div className="h-64 flex items-center justify-center"><div className="w-6 h-6 border-2 border-emerald-500 border-t-transparent rounded-full animate-spin" /></div>}>
           <ResetForm />
         </Suspense>
       </motion.div>

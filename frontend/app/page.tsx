@@ -127,13 +127,13 @@ function HeroVisual() {
   return (
     <div className="relative w-full max-w-md mx-auto lg:mx-0">
       {/* Glow behind card */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-indigo-700/20 rounded-3xl blur-2xl scale-110" />
+      <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/15 to-blue-700/15 rounded-3xl blur-2xl scale-110" />
 
       <div className="relative glass-elevated rounded-3xl p-5 space-y-3">
         {/* Header */}
         <div className="flex items-center justify-between pb-3 border-b border-white/[0.06]">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center">
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center">
               <Activity size={12} className="text-white" />
             </div>
             <span className="text-xs font-black text-white">Live Threat Feed</span>
@@ -167,7 +167,7 @@ function HeroVisual() {
         <div className="pt-2 border-t border-white/[0.06]">
           <div className="flex items-center justify-between mb-1.5">
             <span className="text-[9px] text-slate-600 font-mono uppercase tracking-wider">ML Score</span>
-            <span className="text-[10px] font-bold text-blue-400 font-mono">
+            <span className="text-[10px] font-bold text-emerald-400 font-mono">
               {FAKE_EVENTS[active].score}
             </span>
           </div>
@@ -177,7 +177,7 @@ function HeroVisual() {
               initial={{ width: 0 }}
               animate={{ width: `${parseFloat(FAKE_EVENTS[active].score) * 100}%` }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
-              className="h-full rounded-full bg-gradient-to-r from-blue-500 to-red-500"
+              className="h-full rounded-full bg-gradient-to-r from-emerald-500 to-red-500"
             />
           </div>
         </div>
@@ -221,11 +221,11 @@ export default function LandingPage() {
       {/* ── Navbar ── */}
       <header className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 h-16 border-b border-white/[0.05] bg-[#010b18]/80 backdrop-blur-xl">
         <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center shadow-lg shadow-blue-500/20">
+          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center shadow-lg shadow-emerald-500/25">
             <ShieldAlert size={16} className="text-white" />
           </div>
-          <span className="font-black text-sm tracking-tight">
-            SENTINEL<span className="text-blue-400">CORE</span>
+          <span className="font-black text-sm tracking-tight font-mono">
+            SENTINEL<span className="text-emerald-400">AI</span>
           </span>
         </Link>
 
@@ -240,7 +240,7 @@ export default function LandingPage() {
 
         <div className="flex items-center gap-2">
           {authed ? (
-            <Link href="/dashboard" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-blue-600/80 hover:bg-blue-600 text-white text-xs font-bold transition-all shadow-lg shadow-blue-500/20">
+            <Link href="/dashboard" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-emerald-600/80 hover:bg-emerald-600 text-white text-xs font-bold transition-all shadow-lg shadow-emerald-500/20">
               <BarChart3 size={13} /> Open Dashboard
             </Link>
           ) : (
@@ -248,7 +248,7 @@ export default function LandingPage() {
               <Link href="/register" className="hidden md:flex items-center gap-2 px-4 py-2 rounded-xl bg-white/[0.05] hover:bg-white/[0.09] border border-white/[0.07] text-white text-xs font-bold transition-all">
                 Sign Up
               </Link>
-              <Link href="/login" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-xs font-bold hover:brightness-110 transition-all shadow-lg shadow-blue-500/20">
+              <Link href="/login" className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-blue-600 text-white text-xs font-bold hover:brightness-110 transition-all shadow-lg shadow-emerald-500/20">
                 <Lock size={13} /> Log In
               </Link>
             </>
@@ -280,7 +280,7 @@ export default function LandingPage() {
                 Sign Up
               </Link>
               <Link href="/login" onClick={() => setMenuOpen(false)}
-                className="flex-1 text-center py-2 rounded-xl bg-blue-600 text-sm text-white font-bold">
+                className="flex-1 text-center py-2 rounded-xl bg-emerald-600 text-sm text-white font-bold">
                 Log In
               </Link>
             </div>
@@ -297,9 +297,9 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-[10px] text-blue-400 font-bold tracking-widest uppercase mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[10px] text-emerald-400 font-bold tracking-widest uppercase mb-6"
             >
-              <span className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
+              <span className="w-1.5 h-1.5 bg-emerald-400 rounded-full animate-pulse" />
               AI-Powered SOC Platform
             </motion.div>
 
@@ -311,7 +311,7 @@ export default function LandingPage() {
             >
               Detect Threats
               <br />
-              <span className="bg-gradient-to-r from-blue-400 via-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-emerald-400 via-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Before They Strike
               </span>
             </motion.h1>
@@ -334,7 +334,7 @@ export default function LandingPage() {
             >
               <Link
                 href={authed ? '/dashboard' : '/login'}
-                className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-black tracking-wide hover:brightness-110 transition-all shadow-xl shadow-blue-500/25"
+                className="flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-gradient-to-r from-emerald-600 to-blue-600 text-white text-sm font-black tracking-wide hover:brightness-110 transition-all shadow-xl shadow-emerald-500/25"
               >
                 {authed ? 'Open Dashboard' : 'Start Detection'}
                 <ArrowRight size={15} />
@@ -406,9 +406,9 @@ export default function LandingPage() {
       {/* ── Features ── */}
       <section id="features" className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
         <FadeIn className="text-center mb-16">
-          <span className="text-[10px] text-blue-400 font-bold tracking-[0.3em] uppercase mb-3 block">Platform Capabilities</span>
+          <span className="text-[10px] text-emerald-400 font-bold tracking-[0.3em] uppercase mb-3 block">Platform Capabilities</span>
           <h2 className="text-4xl font-black tracking-tighter">
-            Everything a Modern <span className="text-blue-400">SOC Needs</span>
+            Everything a Modern <span className="text-emerald-400">SOC Needs</span>
           </h2>
           <p className="text-slate-500 text-sm mt-4 max-w-lg mx-auto">
             From ML-driven detection to AI-generated forensics — SentinelCore covers the full incident response lifecycle.
@@ -529,7 +529,7 @@ export default function LandingPage() {
           <FadeIn>
             <span className="text-[10px] text-slate-500 font-bold tracking-[0.3em] uppercase mb-3 block">Stack</span>
             <h2 className="text-4xl font-black tracking-tighter mb-12">
-              Powered by <span className="text-blue-400">Modern Technology</span>
+              Powered by <span className="text-emerald-400">Modern Technology</span>
             </h2>
           </FadeIn>
           <FadeIn delay={0.1} className="flex flex-wrap justify-center gap-3">
@@ -539,7 +539,7 @@ export default function LandingPage() {
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.1 + i * 0.05 }}
-                className="px-4 py-2 rounded-xl glass border border-white/[0.07] text-sm text-slate-300 font-semibold hover:border-blue-500/30 hover:text-white transition-colors cursor-default"
+                className="px-4 py-2 rounded-xl glass border border-white/[0.07] text-sm text-slate-300 font-semibold hover:border-emerald-500/30 hover:text-white transition-colors cursor-default"
               >
                 {t}
               </motion.span>
@@ -552,20 +552,20 @@ export default function LandingPage() {
       <section className="py-24 px-6 md:px-12 border-t border-white/[0.04]">
         <FadeIn>
           <div className="max-w-3xl mx-auto text-center glass-elevated rounded-3xl p-12 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-indigo-700/10 rounded-3xl pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-br from-emerald-600/10 to-blue-700/10 rounded-3xl pointer-events-none" />
             <div className="relative z-10">
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-blue-500/30">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center mx-auto mb-6 shadow-2xl shadow-emerald-500/30">
                 <ShieldAlert size={28} className="text-white" />
               </div>
               <h2 className="text-3xl font-black tracking-tighter mb-4">
-                Ready to Secure <span className="text-blue-400">Your Endpoints?</span>
+                Ready to Secure <span className="text-emerald-400">Your Endpoints?</span>
               </h2>
               <p className="text-slate-400 text-sm mb-8 max-w-md mx-auto leading-relaxed">
                 Sign in to access the full SOC platform — deploy agents, monitor threats, and respond to incidents in real time.
               </p>
               <Link
                 href={authed ? '/dashboard' : '/login'}
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-indigo-600 text-white text-sm font-black tracking-wide hover:brightness-110 transition-all shadow-xl shadow-blue-500/25"
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-2xl bg-gradient-to-r from-emerald-600 to-blue-600 text-white text-sm font-black tracking-wide hover:brightness-110 transition-all shadow-xl shadow-emerald-500/25"
               >
                 {authed ? 'Open Dashboard' : 'Sign In to SentinelCore'}
                 <ArrowRight size={15} />
@@ -579,11 +579,11 @@ export default function LandingPage() {
       <footer className="border-t border-white/[0.05] py-10 px-6 md:px-12">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center">
+            <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center">
               <ShieldAlert size={12} className="text-white" />
             </div>
-            <span className="text-xs font-black tracking-tight text-slate-400">
-              SENTINEL<span className="text-blue-400">CORE</span>
+            <span className="text-xs font-black tracking-tight text-slate-400 font-mono">
+              SENTINEL<span className="text-emerald-400">AI</span>
             </span>
           </div>
           <p className="text-[10px] text-slate-700 font-mono text-center">

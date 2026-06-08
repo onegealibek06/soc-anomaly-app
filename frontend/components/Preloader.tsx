@@ -59,7 +59,7 @@ export default function Preloader() {
           {[1, 2, 3].map(i => (
             <motion.div
               key={i}
-              className="absolute rounded-full border border-blue-500/10"
+              className="absolute rounded-full border border-emerald-500/10"
               style={{ width: 120 * i, height: 120 * i }}
               animate={{ scale: [1, 1.06, 1], opacity: [0.08, 0.18, 0.08] }}
               transition={{ duration: 2.4, delay: i * 0.3, repeat: Infinity, ease: 'easeInOut' }}
@@ -67,7 +67,7 @@ export default function Preloader() {
           ))}
 
           {/* Orbs */}
-          <div className="absolute top-[-20%] left-[-15%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[120px] pointer-events-none" />
+          <div className="absolute top-[-20%] left-[-15%] w-[500px] h-[500px] rounded-full bg-emerald-600/8 blur-[120px] pointer-events-none" />
           <div className="absolute bottom-[-20%] right-[-15%] w-[400px] h-[400px] rounded-full bg-indigo-700/10 blur-[120px] pointer-events-none" />
 
           {/* Center logo */}
@@ -82,7 +82,7 @@ export default function Preloader() {
               <motion.div
                 animate={{ boxShadow: ['0 0 0px rgba(59,130,246,0)', '0 0 40px rgba(59,130,246,0.4)', '0 0 0px rgba(59,130,246,0)'] }}
                 transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-                className="w-20 h-20 rounded-[1.75rem] bg-gradient-to-br from-blue-500 to-indigo-700 flex items-center justify-center shadow-2xl shadow-blue-500/30 ring-1 ring-white/10"
+                className="w-20 h-20 rounded-[1.75rem] bg-gradient-to-br from-emerald-500 to-blue-600 flex items-center justify-center shadow-2xl shadow-emerald-500/30 ring-1 ring-white/10"
               >
                 <ShieldAlert size={36} className="text-white" />
               </motion.div>
@@ -90,12 +90,12 @@ export default function Preloader() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'linear' }}
-                className="absolute -inset-3 rounded-full border-2 border-t-blue-500/60 border-r-blue-500/20 border-b-transparent border-l-transparent"
+                className="absolute -inset-3 rounded-full border-2 border-t-emerald-500/60 border-r-emerald-500/20 border-b-transparent border-l-transparent"
               />
             </div>
 
             <h1 className="text-2xl font-black tracking-tighter text-white">
-              SENTINEL<span className="text-blue-400">CORE</span>
+              SENTINEL<span className="text-emerald-400">AI</span>
             </h1>
             <p className="text-[10px] text-slate-600 font-mono tracking-[0.3em] uppercase mt-1.5">
               SOC · AI · v2.0
@@ -111,12 +111,12 @@ export default function Preloader() {
             transition={{ duration: 0.2 }}
             className="font-mono text-[11px] text-slate-500 mb-6 tracking-wider h-4 relative z-10"
           >
-            <span className="text-blue-500 mr-1">›</span>
+            <span className="text-emerald-500 mr-1">›</span>
             {LINES[lineIdx]}
             <motion.span
               animate={{ opacity: [0, 1, 0] }}
               transition={{ duration: 0.8, repeat: Infinity }}
-              className="ml-1 text-blue-400"
+              className="ml-1 text-emerald-400"
             >▌</motion.span>
           </motion.div>
 
@@ -125,9 +125,9 @@ export default function Preloader() {
             <div className="h-px bg-white/[0.06] rounded-full overflow-hidden">
               <motion.div
                 style={{ width: `${progress}%` }}
-                className="h-full bg-gradient-to-r from-blue-600 to-indigo-500 rounded-full relative"
+                className="h-full bg-gradient-to-r from-emerald-600 to-blue-500 rounded-full relative"
               >
-                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-blue-400 shadow-[0_0_8px_rgba(59,130,246,0.8)]" />
+                <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.8)]" />
               </motion.div>
             </div>
             <div className="flex justify-between mt-2">
