@@ -101,8 +101,8 @@ class AnomalyDetector:
 
     # ── Train ─────────────────────────────────────────────────────────────────
     def train(self, events: list[dict]):
-        if len(events) < 5:
-            logger.warning(f"Недостаточно данных: {len(events)}, нужно ≥5")
+        if len(events) < 50:
+            logger.warning(f"Недостаточно данных: {len(events)}, нужно ≥50")
             return
 
         X = self._extract_features(events)

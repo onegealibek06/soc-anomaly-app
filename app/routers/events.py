@@ -22,7 +22,7 @@ mitre_mapper = MitreMapper()
 
 def train_model_on_existing_data(db: Session):
     all_events = db.query(models.Event).all()
-    if len(all_events) >= 5:
+    if len(all_events) >= 50:
         events_list = [
             {"process_name": e.process_name, "command_line": e.command_line, "user": e.user}
             for e in all_events
